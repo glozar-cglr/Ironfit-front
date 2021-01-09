@@ -37,18 +37,19 @@ export const homeobjTwo = {
 };
 
 export const homeobjThree = {
-    id: 'services',
-    lightBg: false,
-    lightText: true,
+    id: 'signup',
+    lightBg: true,
+    lightText: false,
     lightTextDesc: true,
     topLine: 'Achieve Your Fitness Goals',
     headLine: 'Train Online of face to face',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    buttonLabel: 'Get started',
+    buttonLabel: 'Start Now',
     imgStart: false,/* Para poner la columnas en orden inverso poner true*/
     img: img3,
     alt: 'Workout',
-    dark: true,
-    primary: true,
-    darkText: false
+    dark: false,
+    primary: false,
+    darkText: true
 };
+
