@@ -73,7 +73,7 @@ export const Container = styled.div`
 
         export const FormH1 = styled.h1`
             margin-bottom: 40px;
-            color: #fff;
+            color: #333333;
             font-size: 20px;
             font-weight: 400;
             text-align: center;

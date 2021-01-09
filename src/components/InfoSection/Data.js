@@ -45,6 +45,7 @@ export const homeobjThree = {
     headLine: 'Train Online of face to face',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     buttonLabel: 'Start Now',
+    href: '/signup',
     imgStart: false,/* Para poner la columnas en orden inverso poner true*/
     img: img3,
     alt: 'Workout',

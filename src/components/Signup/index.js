@@ -9,11 +9,15 @@ const SignUp = () => {
                     <Icon to="/">IronFitness</Icon>
                     <FormContent>
                         <Form action="#">
-                            <FormH1>Sign in to your account</FormH1>
-                            <FormLabel htmlFor= 'for'>Email</FormLabel>
-                            <FormInput type='email' required />
+                            <FormH1>Create your Account</FormH1>
+                            <FormLabel htmlFor= 'for'>Name</FormLabel>
+                            <FormInput type='name' required />
+                            <FormLabel htmlFor= 'for'>Last Name</FormLabel>
+                            <FormInput type='lastname' required />
                             <FormLabel htmlFor= 'for'>Password</FormLabel>
                             <FormInput type='password' required />
+                            <FormLabel htmlFor= 'for'>Confirm Password</FormLabel>
+                            <FormInput type='confirm-password' required />
                             <FormButton type='submit'>Continue</FormButton>
                             <Text>Forgot password</Text>
                         </Form>

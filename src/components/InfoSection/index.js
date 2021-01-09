@@ -4,7 +4,7 @@ import React from 'react';
 import { Button } from '../ButtonElement';
 import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './InfoElements'
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, img, alt, primary, dark, dark2, href}) => {
     return (
         <>
          <InfoContainer lightBg={lightBg} id={id}>
@@ -16,7 +16,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                             <Heading lightText={lightText}>{headLine}</Heading> 
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to="home"
+                                <Button to={href}
                                 smooth={true}
                                 duration={500}
                                 spy={true}
