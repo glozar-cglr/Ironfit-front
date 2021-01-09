@@ -57,7 +57,7 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     color: #fff;
 }
-`
+`;
 
 export const NavMenu = styled.ul`
     display: flex;
@@ -69,36 +69,36 @@ export const NavMenu = styled.ul`
     @media screen and (max-width: 768px){
         display: none;
     }
-`
+`;
 
 export const NavItem = styled.li`
     height: 80px;
-`
+`;
 
 export const NavLinks = styled(LinkS)`
     color: #fff;
-    display:flex;
+    display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1 rem;
-    height: 100%
+    padding: 0 1rem;
+    height: 100%;
     cursor: pointer;
       
- /* Highlight links*/
+ /* Highlight links in yellow*/
 
     &.active {
         border-bottom: 3px solid #fffe11b;
     }
-`
+`;
 
 export const NavBtn = styled.nav`
-    display_ flex;
+    display: flex;
     align-items: center;
 
     @media screen and (max-width: 768px) {
         display:none;
     }
-`
+`;
 
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
@@ -119,4 +119,4 @@ export const NavBtnLink = styled(LinkR)`
         color: #010606;
     }
 
-    `
+    `;
