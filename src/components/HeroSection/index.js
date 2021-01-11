@@ -19,7 +19,7 @@ const HeroSection = () => {
             <HeroContent>
                 <HeroH1>We match you with a personal trainer</HeroH1>
                 <HeroP>
-                    We offer the most convenient way to connect you with a local personal trainer either online or in person.
+                    Connect with a local personal trainer to train either online or in person.
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button to="signup" 
