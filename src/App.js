@@ -11,6 +11,10 @@ import SignupPage from './pages/signup'
 
 
 function App() {
+
+ /* const [usernameReg, setUsernameReg] = useState('')
+  const [passwordReg, setPasswordReg] = useState('')*/
+
   return (
     <Router>
       <Navbar/>

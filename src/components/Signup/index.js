@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text} from './SignupElements';
 
-const SignUp = () => {
+function SignUp  () {
+    const [data, setData] = useState({})
+    const handleChange = (e) => {}
     return (
         <>
             <Container>
