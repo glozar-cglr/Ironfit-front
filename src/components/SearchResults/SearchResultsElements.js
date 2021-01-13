@@ -58,7 +58,14 @@ export const SRStars = styled.div`
 `;
 
 export const SRPrice = styled.div`
-    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+
     
+    
+    & > p {
+        text-align: right;
+    }
 `;
 
