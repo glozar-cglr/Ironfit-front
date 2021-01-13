@@ -11,12 +11,22 @@ const SearchPage = () => {
             <Searchbox/>
             <SearchHeading/>
             <SearchResult
-                img = "https://www.google.com/url?sa=i&url=https%3A%2F%2Feminenceorganics.com%2Fca%2Fblog%2F2018%2F05%2F23%2Facne-face-map-what-are-your-breakouts-telling-you&psig=AOvVaw0KW2CIqE2q2S9yarLVay35&ust=1610509585377000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCmuvG9le4CFQAAAAAdAAAAABAD"
+                img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRzsNTpNotGz89__s5dQdchARqDEUm6OiosQ&usqp=CAU"
                 location= "Classes in Lima, Peru"
                 title = "Best Classes in town"
                 description = "This is a test of a small description... Lorem Lorem Lorem"
                 star = "4.5"
-                Price = "ZZ USD per session"
+                price = "ZZ USD per session"
+                total = "Monthly Subs = 150ZZ"
+
+            />
+            <SearchResult
+                img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRzsNTpNotGz89__s5dQdchARqDEUm6OiosQ&usqp=CAU"
+                location= "Classes in Lima, Peru"
+                title = "Best Classes in town"
+                description = "This is a test of a small description... Lorem Lorem Lorem"
+                star = "4.5"
+                price = "ZZ USD per session"
                 total = "Monthly Subs = 150ZZ"
 
             />

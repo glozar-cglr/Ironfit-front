@@ -6,7 +6,7 @@ function Searchbox() {
     return(
         <Container>
             <SearchSpace/>
-            <img src={SearchIcon} height="25px"/>
+            <img src={SearchIcon} height="25px" alt=""/>
         </Container>
     )
 }
