@@ -19,8 +19,6 @@ export const Container = styled.div`
     border: 1px solid lightgray;
     border-radius: 999px;
     margin-left: 20px;
-
-
     `;
 
 export const SearchSpace = styled.input`
