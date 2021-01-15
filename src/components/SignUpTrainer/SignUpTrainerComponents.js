@@ -117,14 +117,6 @@ export const Container = styled.div`
             text-align: center;
         `;
 
-        export const select = styled.select`
-            padding: 16px 16px;
-            margin-bottom: 32px;
-            border: NamedNodeMap;
-            border-radius: 4px;
-
-        `;
-        
         export const FormSelect = styled.select`
             padding: 16px 16px;
             margin-bottom: 32px;

@@ -7,13 +7,14 @@ import Navbar from './components/Navbar';
 import Home from './pages'
 import SigninPage from './pages/signin'
 import SignupPage from './pages/signup'
+import SignUpTrainer from './pages/signuptrainer'
+import SignUpTrainee from './pages/signuptrainee';
+import HomePage from './pages/homePage';
+
 
 
 
 function App() {
-
- /* const [usernameReg, setUsernameReg] = useState('')
-  const [passwordReg, setPasswordReg] = useState('')*/
 
   return (
     <Router>
@@ -23,6 +24,9 @@ function App() {
           <Route path="/signin" component={SigninPage} exact />
           <Route path="/signup" component={SignupPage} exact />
           <Route path="/find-trainer" component={SearchPage} exact/>
+          <Route path="/signup/signup-trainer" component={SignUpTrainer} exact/>
+          <Route path="/signup/signup-trainee" component={SignUpTrainee} exact/>
+          <Route path="/home" component={HomePage} exact/>
       </Switch>
     </Router>
   );
