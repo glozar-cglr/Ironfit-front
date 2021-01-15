@@ -7,10 +7,11 @@ import SearchResult from '../components/SearchResults';
 const SearchPage = () => {
     
     return(
-        <>
+        <>  
             <Searchbox/>
             <SearchHeading/>
             <SearchResult
+                trainer_id = "testid"
                 img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRzsNTpNotGz89__s5dQdchARqDEUm6OiosQ&usqp=CAU"
                 location= "Classes in Lima, Peru"
                 title = "Best Classes in town"

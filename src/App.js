@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Home from './pages'
 import SigninPage from './pages/signin'
 import SignupPage from './pages/signup'
+import TrainerPage from './pages/trainerPage'
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/signin" component={SigninPage} exact />
           <Route path="/signup" component={SignupPage} exact />
           <Route path="/find-trainer" component={SearchPage} exact/>
+          <Route path="/find-trainer/:id"  component={TrainerPage} exact/>
       </Switch>
     </Router>
   );

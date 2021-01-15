@@ -1,16 +1,34 @@
 import styled from 'styled-components';
+import{ Link as LinkR } from 'react-router-dom';
 
-export const SRContainer = styled.div`
+
+export const SRGeneral = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const SRContainer = styled(LinkR)`
     display: flex;
     position: relative;
     margin: 20px;
     padding: 20px;
     border-bottom: 1px solid lightgray;
     cursor: pointer;
+    width: 100%;
+    max-width: 1100px;
+    text-decoration: none;
+    color: #010606;
+
+
+
+
 
     &:hover{
         opacity:0.8;
     }
+
+    &@
 `;
 
 export const SRImage = styled.img`
