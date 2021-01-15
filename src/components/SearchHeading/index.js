@@ -1,8 +1,9 @@
 import React from 'react';
-import { Container, SearchPageInfo, SearchResultsButton, SearchResultsH1, SearchResultsP, SRButtonContainer } from './SearchHeadingElements';
+import { General, Container, SearchPageInfo, SearchResultsButton, SearchResultsH1, SearchResultsP, SRButtonContainer } from './SearchHeadingElements';
 
 function SearchHeading() {
     return (
+        <General>
         <Container>
             <SearchPageInfo>
                 <SearchResultsP>62 Trainers - XX Sports - Choose your preference</SearchResultsP>
@@ -15,6 +16,7 @@ function SearchHeading() {
                 
             </SearchPageInfo>
         </Container>
+        </General>
     )
 };
 

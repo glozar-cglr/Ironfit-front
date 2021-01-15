@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const General = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+`;
 
+export const Container = styled.div`
+    width: 100%;
+    max-width: 1100px;
 `;
 
 export const SearchPageInfo = styled.div`
