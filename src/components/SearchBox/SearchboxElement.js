@@ -9,8 +9,6 @@ export const Container = styled.div`
     height: 50px;
     border: 1px solid lightgray;
     border-radius: 999px;
-
-
     `;
 
 export const SearchSpace = styled.input`
