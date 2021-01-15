@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
 
 import { Container, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text, FormH3, FormSelect} from '../components/Signup/SignupElements';
-import { signup } from '../services/userWs';
+import { signup } from '../Services/userWs';
 import {useHistory} from 'react-router-dom'
 
 

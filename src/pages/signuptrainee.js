@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { signUpTraineeWs } from '../services/traineeWs';
+import { signUpTraineeWs } from '../Services/traineeWs'
 import {Container, FormWrap, Icon, FormContent, Form, FormH1, FormH3, FormSelect, FormLabel, FormInput, FormButton} from '../components/SignUpTrainer/SignUpTrainerComponents'
 import {useHistory} from 'react-router-dom'
 import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';

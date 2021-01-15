@@ -1,6 +1,6 @@
 import React from 'react';
 import TrainerInfoCard from '../components/TrainerInfoCard';
-import {getTrainerDetail} from '../Services/trainerWs';
+import {getTrainerDetail} from '../Services/trainersWs';
 
 
 const TrainerPage = (
