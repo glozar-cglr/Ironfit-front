@@ -17,15 +17,21 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>We match you with a one-on-one trainer</HeroH1>
+                <HeroH1>We match you with a personal trainer</HeroH1>
                 <HeroP>
-                    Get healthier or get into a specific fitness activity. We offer the most convenient way to connect you with a local personal trainer either online or in person.
+                    Connect with a local personal trainer to train either online or in person.
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="signup" onMouseEnter={onHover} 
+                    <Button to="signup" 
+                    onMouseEnter={onHover} 
                     onMouseLeave={onHover}
                     primary='true'
                     dark='true'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
                     >
                         Get Started {hover ? <ArrowForward /> : <ArrowRight/>}
                     </Button>

@@ -1,14 +1,19 @@
+import img1 from "../../images/svg-1.svg"
+import img2 from "../../images/svg-2.svg"
+import img3 from "../../images/svg-3.svg"
+
 export const homeobjOne = {
     id: 'about',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Premium Suscription',
-    headLine: 'We offer the most convenient way to connect you with a local personal trainer either online or in person ',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur',
+    topLine: 'Personalized Training',
+    headLine: 'Connect with a local personal trainer',
+    description: 'Find a local trainer near you, customize each session to meet your fitness goals and train either online or in person.',
     buttonLabel: 'Get started',
+    href: '/signup',
     imgStart: false,/* Para poner la columnas en orden inverso poner true*/
-    img: require('../../images/svg-1.svg'),
+    img: img1,
     alt: 'Workout',
     dark: true,
     primary: true,
@@ -20,12 +25,13 @@ export const homeobjTwo = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Premium Suscription',
-    headLine: 'We offer the most convenient way to connect you with a local personal trainer either online or in person ',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur',
+    topLine: 'Premium Subscription',
+    headLine: 'Choose the trainer according to your target and your budget',
+    description: 'You can have different trainers according to your objectives, or change whenever you want! With our Premium Subscription the sky is the limit!',
     buttonLabel: 'Learn More',
+    href: '/signup',
     imgStart: true,/* Para poner la columnas en orden inverso poner true*/
-    img: require('../../images/svg-2.svg'),
+    img: img2,
     alt: 'Otro-workout',
     dark: false,
     primary: false,
@@ -33,18 +39,20 @@ export const homeobjTwo = {
 };
 
 export const homeobjThree = {
-    id: 'about',
-    lightBg: false,
-    lightText: true,
+    id: 'signup',
+    lightBg: true,
+    lightText: false,
     lightTextDesc: true,
-    topLine: 'Premium Suscription',
-    headLine: 'We offer the most convenient way to connect you with a local personal trainer either online or in person ',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur',
-    buttonLabel: 'Get started',
+    topLine: 'Achieve Your Fitness Goals',
+    headLine: 'Train Online of face to face',
+    description: 'Pandemic times? Do not worry! IronFitness trainers are ready to assist your training online!',
+    buttonLabel: 'I want to start!',
+    href: '/signup',
     imgStart: false,/* Para poner la columnas en orden inverso poner true*/
-    img: require('../../images/svg-3.svg'),
+    img: img3,
     alt: 'Workout',
-    dark: true,
-    primary: true,
-    darkText: false
+    dark: false,
+    primary: false,
+    darkText: true
 };
+
