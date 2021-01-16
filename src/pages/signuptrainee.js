@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { signUpTraineeWs } from '../Services/traineeWs'
+import { signUpTraineeWs } from '../services/traineeWs'
 import {Container, FormWrap, Icon, FormContent, Form, FormH1, FormH3, FormSelect, FormLabel, FormInput, FormButton} from '../components/SignUpTrainer/SignUpTrainerComponents'
 import {useHistory} from 'react-router-dom'
 import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
@@ -14,8 +14,8 @@ function SignUpTrainee () {
         e.preventDefault()
         console.log(data)
         signUpTraineeWs(data).then((response) => {
+            history.push("/home")
             setData({data:{}})
-            history.push("/")
             console.log("Cogio los demas datos!", response)
         }).catch((error)=>{
             console.log("Nope, esta mal", error.response)
@@ -65,9 +65,9 @@ function SignUpTrainee () {
                             <option value= "Yoga">Yoga</option>
                         </FormSelect>
                         <FormLabel htmlFor= 'for'>Describe your objectives</FormLabel>
-                        <FormInput name ='description'  onChange = {handleChange}/>
+                        <FormInput name ='description' type="text"  onChange = {handleChange}/>
                         <FormLabel htmlFor= 'for'>What is your current weight?</FormLabel>
-                        <FormInput name ='weight'  onChange = {handleChange}/>
+                        <FormInput name ='weight'  type="number" onChange = {handleChange}/>
                         <FormButton type='submit'>Continue</FormButton>
                     </Form>
                 </FormContent>
