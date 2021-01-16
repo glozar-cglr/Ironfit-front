@@ -1,11 +1,10 @@
 import React from 'react';
 import Searchbox from '../components/SearchBox';
 import SearchHeading from '../components/SearchHeading';
-import SearchResult from '../components/SearchResults';
+import SearchResult from '../components/SearchResults'
 
 
 const SearchPage = () => {
-    
     return(
         <>  
             <Searchbox/>
