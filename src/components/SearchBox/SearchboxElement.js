@@ -7,6 +7,7 @@ export const GeneralSpace = styled.div`
     align-items: center;
     justify-content: center;
     background-color: red:
+    
 `;
 
 export const Container = styled.div`
@@ -19,6 +20,7 @@ export const Container = styled.div`
     border: 1px solid lightgray;
     border-radius: 999px;
     margin-left: 20px;
+    
     `;
 
 export const SearchSpace = styled.input`
@@ -26,6 +28,8 @@ export const SearchSpace = styled.input`
     padding: 10px;
     outline-width: 0;
     width: 400px;
+    
+    
 
     `;
 
