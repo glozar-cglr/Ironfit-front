@@ -1,4 +1,5 @@
 import React from 'react';
+import TrainerBook from '../components/TrainerBook';
 import TrainerInfoCard from '../components/TrainerInfoCard';
 import {getTrainerDetail} from '../services/trainersWs';
 
@@ -25,7 +26,7 @@ const TrainerPage = (
 
     return (
         <> 
-            <div style={{width:'100%',  display:'flex', "justify-content":"center"}}>
+            <div style={{width:'100%',  display:'flex', "justify-content":"center", "padding-top":"50px", "background-color":"#fafafc"}}>
                 <div style={{width: '66%', 'max-width': 750}}> 
                     {/* Acá van los temas que que van a ir a la izquierda */}
                     <TrainerInfoCard
@@ -46,7 +47,10 @@ const TrainerPage = (
                 </div>
                 <div style={{width: '33%', 'max-width': 300, 'margin-left':50}}>
                     {/* Acá van los temas que irían a la derecha */}
-                    <p>Test 2</p>
+                    <TrainerBook 
+                        trial={15}
+                        price={18}
+                    />
                 </div>
             </div>
            
