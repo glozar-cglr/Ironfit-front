@@ -6,9 +6,10 @@ function SearchResult({
     _id,
     profile_picture,
     city,
-    title,
+    country,
+    name,
     description,
-    star,
+    rank,
     trial,
     price
 }) {
@@ -18,15 +19,15 @@ function SearchResult({
                 <SRImage src={profile_picture} alt=""/>
                 <SRTextDiv>
                     <SRInfoTop>
-                        <p>{city}</p>
-                        <h3>{title}</h3>
+                        <p>{"Classes in " + city + ", "+ country}</p>
+                        <h3>{name}</h3>
                         <p>_____</p>
                         <p>{description}</p>
                     </SRInfoTop>
                     <SRInfoBottom>
                         <SRStars>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Star_full.svg" height="30px"/>
-                            <p><strong>{star}</strong></p>
+                            <p><strong>{rank}</strong></p>
                         </SRStars>
                         <SRPrice>
                             <h2>{"Test Lesson USD " + trial}</h2>

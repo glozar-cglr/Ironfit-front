@@ -102,6 +102,8 @@ function SignUpTrainer () {
                         <FormInput name ='trial' type="number" onChange = {handleChange} />
                         <FormLabel htmlFor= 'for' >Price</FormLabel>
                         <FormInput name ='price' type="number" onChange = {handleChange} />
+                        <FormLabel htmlFor= 'for' >About you</FormLabel>
+                        <FormInput name ='description' type="text" onChange = {handleChange} />
                         <FormButton type='submit'>Continue</FormButton>
                     </Form>
                 </FormContent>
