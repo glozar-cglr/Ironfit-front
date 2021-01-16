@@ -41,23 +41,23 @@ function SignUp  () {
                         <Form onSubmit = {onSubmit}>
                             <FormH1>Create your Account</FormH1>
                             <FormLabel htmlFor= 'for'>Name</FormLabel>
-                            <FormInput name ='name' required onChange = {handleChange} />
+                            <FormInput name ='name' type="text" required onChange = {handleChange} />
                             <FormLabel htmlFor= 'for'>Last Name</FormLabel>
-                            <FormInput name ='last_name' required onChange = {handleChange}/>
+                            <FormInput name ='last_name' type="text" required onChange = {handleChange}/>
                             <FormLabel htmlFor= 'for'>Email</FormLabel>
-                            <FormInput name ='email' required onChange = {handleChange}/>
+                            <FormInput name ='email' type="email" required onChange = {handleChange}/>
                             <FormLabel htmlFor= 'for'>Password</FormLabel>
-                            <FormInput name ='password' required onChange = {handleChange}/>
+                            <FormInput name ='password' type="password" required onChange = {handleChange}/>
                             <FormLabel htmlFor= 'for'>Confirm Password</FormLabel>
-                            <FormInput name ='confirmPassword' required onChange = {handleChange}/>
+                            <FormInput name ='confirmPassword' type="password" required onChange = {handleChange}/>
                             <FormLabel htmlFor= 'for'>Select your role:</FormLabel>
-                            <FormSelect name = 'role' placeholder="Select a role" onChange = {handleChange} >
+                            <FormSelect name = 'role' type="text" placeholder="Select a role" onChange = {handleChange} >
                                 <option>Select a role</option>
                                 <option value="TRAINER">Trainer</option>
                                 <option value="TRAINEE">Trainee</option>
                             </FormSelect>
                             <FormLabel htmlFor= 'for'>Upload a picture</FormLabel>
-                            <FormInput name ='name' required onChange = {handleChange} />
+                            <FormInput name ='profile_picture' required onChange = {handleChange} />
                             <FormButton type='submit'>Continue</FormButton>
                             <Text>Forgot password</Text>
                         </Form>

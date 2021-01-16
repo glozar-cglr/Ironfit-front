@@ -67,25 +67,25 @@ function SignUpTrainer () {
                             <option value= "Yoga">Yoga</option>
                         </FormSelect>
                         <FormLabel htmlFor= 'for'>Trainer Type</FormLabel>
-                        <FormSelect name = 'trainer_type' onChange = {handleChange}>
+                        <FormSelect name = 'trainer_type' type="text" onChange = {handleChange}>
                             <option>Select your Trainer Type</option>
                             <option value= "Professional Trainer">Professional Trainer</option>
                             <option value= "Experienced Athlete">Experienced Athlete</option>
                         </FormSelect>
                         
                         <FormLabel htmlFor= 'for'>Country</FormLabel>
-                        <FormInput name ='country'  onChange = {handleChange}/>
+                        <FormInput name ='country' type="text" onChange = {handleChange}/>
                         
                         <FormLabel htmlFor= 'for'>City</FormLabel>
                         <FormInput name ='city'  onChange = {handleChange}/>
                         <FormLabel htmlFor= 'for'>Methodology</FormLabel>
-                        <FormSelect name = 'methodology'  onChange = {handleChange}>
+                        <FormSelect name = 'methodology' type="text"  onChange = {handleChange}>
                             <option>Select your Methodology</option>
                             <option value= "Online">Online</option>
                             <option value= "Live">Live</option>
                         </FormSelect>
-                        <FormLabel htmlFor= 'for'>Birthday</FormLabel>
-                        <FormInput name ='birthday'  onChange = {handleChange} />
+                        <FormLabel htmlFor= 'for' >Birthday</FormLabel>
+                        <FormInput name ='birthday' type="date" onChange = {handleChange} />
                         <FormButton type='submit'>Continue</FormButton>
                     </Form>
                 </FormContent>
