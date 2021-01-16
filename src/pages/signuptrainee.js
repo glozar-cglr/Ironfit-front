@@ -31,7 +31,7 @@ function SignUpTrainee () {
                 <FormContent>
                     <Form onSubmit = {onSubmit}>
                         <FormH1>We want to know more about you</FormH1>
-                        <FormLabel htmlFor= 'for'>Country</FormLabel>
+                        <FormLabel htmlFor= 'for'>Sport</FormLabel>
                         <FormSelect name = 'interest' onChange = {handleChange} multiple>
                             <option>Select your sport</option>
                             <option value= "American Football">American Football</option>
