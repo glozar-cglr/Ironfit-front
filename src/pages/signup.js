@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
 
 import { Container, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text, FormH3, FormSelect} from '../components/Signup/SignupElements';
-import { signup } from '../Services/userWs';
+import { signup } from '../services/userWs';
 import {useHistory} from 'react-router-dom'
 
 
@@ -41,25 +41,23 @@ function SignUp  () {
                         <Form onSubmit = {onSubmit}>
                             <FormH1>Create your Account</FormH1>
                             <FormLabel htmlFor= 'for'>Name</FormLabel>
-                            <FormInput name ='name' required onChange = {handleChange} />
+                            <FormInput name ='name' type="text" required onChange = {handleChange} />
                             <FormLabel htmlFor= 'for'>Last Name</FormLabel>
-                            <FormInput name ='last_name' required onChange = {handleChange}/>
+                            <FormInput name ='last_name' type="text" required onChange = {handleChange}/>
                             <FormLabel htmlFor= 'for'>Email</FormLabel>
-                            <FormInput name ='email' required onChange = {handleChange}/>
+                            <FormInput name ='email' type="email" required onChange = {handleChange}/>
                             <FormLabel htmlFor= 'for'>Password</FormLabel>
-                            <FormInput name ='password' required onChange = {handleChange}/>
+                            <FormInput name ='password' type="password" required onChange = {handleChange}/>
                             <FormLabel htmlFor= 'for'>Confirm Password</FormLabel>
-                            <FormInput name ='confirmPassword' required onChange = {handleChange}/>
+                            <FormInput name ='confirmPassword' type="password" required onChange = {handleChange}/>
                             <FormLabel htmlFor= 'for'>Select your role:</FormLabel>
-                            <FormSelect >
-                            <select name = 'role' onChange = {handleChange}>
+                            <FormSelect name = 'role' type="text" placeholder="Select a role" onChange = {handleChange} >
                                 <option>Select a role</option>
                                 <option value="TRAINER">Trainer</option>
                                 <option value="TRAINEE">Trainee</option>
-                            </select>
                             </FormSelect>
                             <FormLabel htmlFor= 'for'>Upload a picture</FormLabel>
-                            <FormInput name ='name' required onChange = {handleChange} />
+                            <FormInput name ='profile_picture' required onChange = {handleChange} />
                             <FormButton type='submit'>Continue</FormButton>
                             <Text>Forgot password</Text>
                         </Form>
