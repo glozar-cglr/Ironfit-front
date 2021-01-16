@@ -15,7 +15,7 @@ import {
  } from './NavbarElements';
 
 
-const Navbar = ( { toggle } ) => {
+const Navbar = ( { toggle, user,logout } ) => {    
     return (
        <>
            <Nav>
@@ -60,6 +60,16 @@ const Navbar = ( { toggle } ) => {
                             exact='true'
                             offset={-80}
                             >Sign Up</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="/"
+                            onClick={logout}
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}
+                            >Log Out</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>

@@ -44,7 +44,7 @@ export const homeobjThree = {
     lightText: false,
     lightTextDesc: true,
     topLine: 'Achieve Your Fitness Goals',
-    headLine: 'Train Online of face to face',
+    headLine: 'Train online or face to face',
     description: 'Pandemic times? Do not worry! IronFitness trainers are ready to assist your training online!',
     buttonLabel: 'I want to start!',
     href: '/signup',

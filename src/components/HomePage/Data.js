@@ -3,11 +3,11 @@ import img1 from "../../images/svg-1.svg"
 
 export const homeobjFour = {
     id: 'about',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: "Let's Start!",
-    headLine: 'Find you trainer here:',
+    headLine: 'Find you trainer here',
     
     buttonLabel: 'Find my trainer!',
     href: '/find-trainer',

@@ -3,7 +3,7 @@ import InfoSection from '../components/InfoSection';
 import Footer from '../components/Footer';
 import Sidebar from '../components/SideBar';
 import { homeobjFour } from '../components/HomePage/Data';
-import SearchBox from '../components/SearchBox'
+
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,6 @@ const Home = () => {
         <>
          <Sidebar isOpen={isOpen} toggle={toggle} />
          <InfoSection {...homeobjFour}/>
-         <SearchBox />
          <Footer />
          
         </>
