@@ -10,6 +10,9 @@ function SignUpTrainee () {
     const handleChange = (e) => {
         setData({...data, [e.target.name] : e.target.value})
     }
+    const handleArray = (e) => {
+        setData({...data, [e.target.name] : Array.from(e.target.selectedOptions, option => option.value)})
+    }
     const onSubmit = (e) => {
         e.preventDefault()
         console.log(data)
@@ -32,7 +35,7 @@ function SignUpTrainee () {
                     <Form onSubmit = {onSubmit}>
                         <FormH1>We want to know more about you</FormH1>
                         <FormLabel htmlFor= 'for'>Sport</FormLabel>
-                        <FormSelect name = 'interest' onChange = {handleChange} multiple>
+                        <FormSelect name = 'interest' onChange = {handleArray} multiple>
                             <option>Select your sport</option>
                             <option value= "American Football">American Football</option>
                             <option value= "Athletics">Athletics</option>

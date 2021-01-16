@@ -51,7 +51,7 @@ function SignUp  () {
                             <FormLabel htmlFor= 'for'>Confirm Password</FormLabel>
                             <FormInput name ='confirmPassword' type="password" required onChange = {handleChange}/>
                             <FormLabel htmlFor= 'for'>Select your role:</FormLabel>
-                            <FormSelect name = 'role' type="text" placeholder="Select a role" onChange = {handleChange} >
+                            <FormSelect name = 'role' type="text" placeholder="Select a role" required onChange = {handleChange} >
                                 <option>Select a role</option>
                                 <option value="TRAINER">Trainer</option>
                                 <option value="TRAINEE">Trainee</option>

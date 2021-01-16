@@ -120,7 +120,8 @@ export const StarBox = styled.div`
 `;
 
 export const Teaches = styled.div`
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

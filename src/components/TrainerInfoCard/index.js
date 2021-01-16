@@ -21,9 +21,9 @@ function TrainerInfoCard(
     return(
         <>
             <General>
-                <MainPicture src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRzsNTpNotGz89__s5dQdchARqDEUm6OiosQ&usqp=CAU" alt=""/>
+                <MainPicture src={img} alt=""/>
                 <TitleSection>
-                    <ProfilePicture src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRzsNTpNotGz89__s5dQdchARqDEUm6OiosQ&usqp=CAU"/>
+                    <ProfilePicture src={profile_picture} alt=""/>
                     <NamingSection>
                         <NamingSectionP1>
                             <NameDiv>
@@ -33,11 +33,11 @@ function TrainerInfoCard(
                                         <span>{methodology}</span>
                                     </div>
                                     <div>
-                                        <span>From</span>
+                                        <span>From </span>
                                         <span>{country}</span>
                                     </div>
                                     <div>
-                                        <span>Doing classes in</span>
+                                        <span>Doing classes in </span>
                                         <span>{city}, {country}</span>
                                     </div>
                                 </PersonalInfoDiv>
@@ -58,11 +58,11 @@ function TrainerInfoCard(
                                             <span style={{"font-size":14, "font-weight":500, color: "#ffe116"}}>{rank}</span>
                                         </StarBox>
                                         <div>
-                                            <span>{[1,2,3,4,5].length} </span>
+                                            <span>{lessons} </span>
                                             <span>LESSONS</span>
                                         </div>
                                         <div>
-                                            <span>{[1,2,3,4,5].length} </span>
+                                            <span>{students} </span>
                                             <span>STUDENTS</span>
                                         </div>
                                     </Stars>
@@ -73,7 +73,7 @@ function TrainerInfoCard(
                             <Teaches>
                                 <TeachesTitle>Teaches</TeachesTitle>
                                 <TeachesSport>
-                                    {["ABC", "DEF", "GHI"].map(e => (
+                                    {sport.map(e => (
                                         <div style={{"margin-right":10}}>
                                             <span>{e}</span>
                                         </div>

@@ -3,22 +3,22 @@ import React from 'react';
 import { SRGeneral, SRContainer, SRImage, SRTextDiv, SRInfoTop, SRInfoBottom, SRStars, SRPrice} from './SearchResultsElements'
 
 function SearchResult({
-    trainer_id,
-    img,
-    location,
+    _id,
+    profile_picture,
+    city,
     title,
     description,
     star,
-    price,
-    total
+    trial,
+    price
 }) {
     return (
         <SRGeneral>
-            <SRContainer to={"/find-trainer/" + trainer_id}>
-                <SRImage src={img} alt=""/>
+            <SRContainer to={"/find-trainer/" + _id}>
+                <SRImage src={profile_picture} alt=""/>
                 <SRTextDiv>
                     <SRInfoTop>
-                        <p>{location}</p>
+                        <p>{city}</p>
                         <h3>{title}</h3>
                         <p>_____</p>
                         <p>{description}</p>
@@ -29,8 +29,8 @@ function SearchResult({
                             <p><strong>{star}</strong></p>
                         </SRStars>
                         <SRPrice>
-                            <h2>{price}</h2>
-                            <p>{total}</p>
+                            <h2>{"Test Lesson USD " + trial}</h2>
+                            <p>{"Classes Cost USD "+ price}</p>
                         </SRPrice>
                     </SRInfoBottom>
                 </SRTextDiv>

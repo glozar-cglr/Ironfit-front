@@ -9,6 +9,10 @@ function SignUpTrainer () {
     const [data, setData] = useState ({})
     const handleChange = (e) => {
         setData({...data, [e.target.name] : e.target.value})
+    };
+
+    const handleArray = (e) => {
+        setData({...data, [e.target.name] : Array.from(e.target.selectedOptions, option => option.value)})
     }
     const onSubmit = (e) => {
         e.preventDefault()
@@ -33,7 +37,7 @@ function SignUpTrainer () {
                         <FormH1>As a trainer we need more information about you</FormH1>
                         
                         <FormLabel htmlFor= 'for'>Sport</FormLabel>
-                        <FormSelect name = 'sport' onChange = {handleChange} multiple>
+                        <FormSelect name = 'sport' onChange = {handleArray} multiple>
                         
                             <option>Select your sport</option>
                             <option value= "American Football">American Football</option>
@@ -86,6 +90,18 @@ function SignUpTrainer () {
                         </FormSelect>
                         <FormLabel htmlFor= 'for' >Birthday</FormLabel>
                         <FormInput name ='birthday' type="date" onChange = {handleChange} />
+                        <FormLabel htmlFor= 'for' >Lessons</FormLabel>
+                        <FormInput name ='lessons' type="number" onChange = {handleChange} />
+                        <FormLabel htmlFor= 'for' >Students</FormLabel>
+                        <FormInput name ='students' type="number" onChange = {handleChange} />
+                        <FormLabel htmlFor= 'for' >Rank</FormLabel>
+                        <FormInput name ='rank' type="number" onChange = {handleChange} />
+                        <FormLabel htmlFor= 'for' >Trainer Picture</FormLabel>
+                        <FormInput name ='img' type="text" onChange = {handleChange} />
+                        <FormLabel htmlFor= 'for' >Trial Price</FormLabel>
+                        <FormInput name ='trial' type="number" onChange = {handleChange} />
+                        <FormLabel htmlFor= 'for' >Price</FormLabel>
+                        <FormInput name ='price' type="number" onChange = {handleChange} />
                         <FormButton type='submit'>Continue</FormButton>
                     </Form>
                 </FormContent>
